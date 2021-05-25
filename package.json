@@ -1,0 +1,32 @@
+{
+  "name": "@idkjs/frp-utils",
+  "version": "0.1.0",
+  "files": [
+    "src",
+    "bsconfig.json",
+    "react/opam",
+    "react/src/**/*.ml",
+    "react/src/**/*.mli",
+    "react/src/**/*.bs.js",
+    "react/doc/**/*",
+    "react/pkg/**/*",
+    "react/**/*.ml",
+    "react/**/*.mli",
+    "**/*.bs.js",
+    "!**/dune",
+    "!src/TestFrp",
+    "!**/.merlin"
+  ],
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "pub": "npx np --yolo"
+  },
+  "keywords": [ "ReasonML, Rescript, OCaml" ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "^9.0.2"
+  }
+}
